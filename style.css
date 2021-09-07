@@ -26,6 +26,7 @@ img { max-width: 100%; }
 p {font-size: 1.2em; line-height: 1.4em; color: #141A28;}
 
 h1 { 
+    text-shadow: 2px 2px 9px black;
     text-transform: uppercase; 
     text-align: center; 
     font-size: 2em;
@@ -52,7 +53,7 @@ header {
 }
 
 .branch, .branch img {
-    width: 90px;
+    width: 120px;
     border-radius: 50%;
 }
 
@@ -73,7 +74,6 @@ header {
 }
 
 .menu .menu-link:hover {opacity: .50;}
-
 
 main {
     background-color: #a9a9a9;
@@ -166,8 +166,9 @@ main {
     opacity: .75;
 }
 
-.servicos {background-color: #FFF; width: 100%;}
-
+.servicos {
+    background-image: url("img/preview-fundo-servicos.png");
+}
 
 .contact {flex-direction: column;}
 
