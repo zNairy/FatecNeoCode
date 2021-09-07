@@ -36,6 +36,10 @@ h1 {
 
 h2 { color: #141A28; }
 
+.carousel {
+    background-color: #181818;
+}
+
 section {padding: 20px; margin: 20px;}
 
 .container {
