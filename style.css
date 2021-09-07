@@ -52,8 +52,8 @@ section {padding: 20px; margin: 20px;}
 }
 
 header {
-    width: 100%;
-    background-color: #2e2e2e;
+    height: 85px;
+    background-image: linear-gradient(to right bottom, #414141, #000000)
 }
 
 .branch, .branch img {
@@ -71,6 +71,7 @@ header {
     margin: 10px;
     padding: 10px;
     color: #ff9c9c;
+    text-shadow: 1px 1px 15px #ff9c9c;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -80,7 +81,7 @@ header {
 .menu .menu-link:hover {opacity: .50;}
 
 main {
-    background-color: #a9a9a9;
+    background-image: linear-gradient(to right bottom, #a9a9a9, #000000);
     width: 100%;
 }
 
@@ -172,6 +173,7 @@ main {
 
 .servicos {
     background-image: url("img/preview-fundo-servicos.png");
+    border-radius: 15px;
 }
 
 .contact {flex-direction: column;}
@@ -184,16 +186,16 @@ main {
     width: 4px;
     height: 12px;
     margin-right: 10px;
-    background-color: #141A28;
+    background-color: #7c7c7c;
     border-radius: 5px;
 }
-.contact-link {color: #141A28;}
+.contact-link {color: #ffffff;}
 
 .map {
     margin: 20px 0 40px 0;
 }
 
-footer { background-color: #292929; }
+footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
 
 .text-white { color: #E9F3FE; }
 
@@ -205,6 +207,6 @@ footer { background-color: #292929; }
     bottom: 1%;
     border-radius: 50%;
     padding: 20px;
-    background-color: #141A28;
+    background-color: #22262e;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .15);
 }
