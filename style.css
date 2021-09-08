@@ -57,7 +57,7 @@ header {
 }
 
 .branch, .branch img {
-    width: 120px;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -109,16 +109,16 @@ main {
 
 .super-card-text p + p {margin-top: 1em;}
 
-.card-group { margin-bottom: 40px;}
+.card-group { margin-bottom: 40px; width: 2500px;}
 
 .card {
-    max-width: 350px;
+    max-width: 400px;
     min-height: 500px;
     border-radius: 20px;
     margin: 20px;
     background-color: #222222;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .15);
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -128,12 +128,10 @@ main {
 
 .card-img { padding: 1em; }
 
-.img-body,
 .img-body img {
-    width: 200px;
+    width: 100px;
     display: table;
     margin: 0 auto; 
-    border-radius: 50%;
 }
 
 .card-body { padding: 1em; }
@@ -172,7 +170,7 @@ main {
 }
 
 .servicos {
-    background-image: url("img/preview-fundo-servicos.png");
+    background-image: url("./img/preview-fundo-servicos-com-logo.png");
     border-radius: 15px;
 }
 
