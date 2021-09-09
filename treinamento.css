@@ -26,6 +26,7 @@ img { max-width: 100%; }
 p {font-size: 1.2em; line-height: 1.4em; color: #141A28;}
 
 h1 { 
+    color:white;
     text-shadow: 1px 1px 9px black;
     text-transform: uppercase; 
     text-align: center;
@@ -34,9 +35,10 @@ h1 {
 }
 
 .descricao-inicio {
+    filter: brightness(100%);
     font-size: 18px;
     text-align: center;
-    color: black;
+    color: white;
     text-shadow: white 0.1em 0.1em 0.5em;
 }
 
@@ -52,6 +54,7 @@ h1 {
 }
 
 .container {
+    filter:blur(0.7px);
     width: 980px;
     margin: 0 auto;
     display: flex;

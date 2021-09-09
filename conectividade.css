@@ -27,7 +27,7 @@ p {font-size: 1.2em; line-height: 1.4em; color: #141A28;}
 
 h1 { 
     color:white;
-    text-shadow: 2px 2px 9px white;
+    text-shadow: 2px 2px 9px black;
     text-transform: uppercase; 
     text-align: center;
     font-size: 3em;
@@ -35,10 +35,11 @@ h1 {
 }
 
 .descricao-inicio {
+    filter: brightness(100%);
     font-size: 18px;
     text-align: center;
     color: white;
-    text-shadow: 4px 4px 10px gray;
+    text-shadow: white 0.1em 0.1em 0.5em;
 }
 
 .parallax-conectividade {
@@ -53,6 +54,7 @@ h1 {
 }
 
 .container {
+    filter:blur(0.7px);
     width: 980px;
     margin: 0 auto;
     display: flex;
