@@ -34,6 +34,13 @@ h1 {
     line-height: 1em;
 }
 
+.icone-parallax {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
 .descricao-inicio {
     filter: contrast(500%);
     font-size: 18px;

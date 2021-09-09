@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+        
     font-size: 16px;
     background-color: #E9F3FE;
     overflow-x: hidden;
@@ -21,7 +21,7 @@ body {
 
 a  {color: #FFF; }
 
-img { max-width: 100%; }
+img { max-width: 100%;}
 
 p {font-size: 1.2em; line-height: 1.4em; color: #141A28;}
 
@@ -32,6 +32,13 @@ h1 {
     text-align: center;
     font-size: 3em;
     line-height: 1em;
+}
+
+.icone-parallax {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
 }
 
 .descricao-inicio {
