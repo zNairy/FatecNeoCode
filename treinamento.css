@@ -61,7 +61,6 @@ h1 {
 }
 
 .container {
-    filter:blur(0.7px);
     width: 980px;
     margin: 0 auto;
     display: flex;

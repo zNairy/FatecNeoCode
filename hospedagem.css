@@ -61,13 +61,12 @@ h1 {
 }
 
 .container {
-    filter:blur(0.7px);
     width: 980px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
 }
 
 header {
