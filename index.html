@@ -218,6 +218,17 @@ main {
     margin: 20px 0 40px 0;
 }
 
+.parallax-projetos {
+    backdrop-filter: blur(100px);
+    background-image: url("banners/banner-projetos.jpeg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .parallax-nossotime {
     backdrop-filter: blur(100px);
     background-image: url("banners/banner-nossotime.jpg");
@@ -236,6 +247,19 @@ footer { background-image: linear-gradient(to right bottom, #090909, #000000)}
 
 .footer small { text-align: center; padding: 40px;  margin: 0 auto;}
 
+.btn-znet {
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: #ff9c9c;
+    text-shadow: 1px 1px 15px #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
 .btn-up {
     position: fixed;
     right: 1%;
@@ -244,6 +268,7 @@ footer { background-image: linear-gradient(to right bottom, #090909, #000000)}
     padding: 20px;
     background-color: #22262e;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, .15);
+    opacity: .50;
 }
     </style>
     
@@ -256,6 +281,7 @@ footer { background-image: linear-gradient(to right bottom, #090909, #000000)}
                     <ul>
                         <li><a class="menu-link" href="#carouselExampleControls">Início</a></li>
                         <li><a class="menu-link" href="#sobre">Sobre</a></li>
+                        <li><a class="menu-link" href="#projetos">Projetos</a></li>
                         <li><a class="menu-link" href="#servicos">Serviços</a></li>
                         <li><a class="menu-link" href="#contato">Contato</a></li>
                     </ul>
@@ -318,7 +344,37 @@ footer { background-image: linear-gradient(to right bottom, #090909, #000000)}
                         </p>
                     </div>
                 </div>
+            </section>  
+            
+
+            <section id="projetos">
+                <h1 style="color: whitesmoke; text-shadow: black 2px 2px 15px;"><strong>Projetos</strong> de <strong>Consultoria</strong></h1>
+                <div class="super-card">
+                    <div class="">
+                        <img src="banners/banner-fatec.png" alt="Minha foto", title="Meu nome" style="padding-left: 10px;padding-right:10px;border-radius: 20px;">
+                        <p style="text-align: center;padding-left: 20px;padding-top: 10px;">Executa tarefas de projetar soluções em hardware, integrando estruturas e componentes físicos dentro do projeto, verificando aspectos de viabilidade, custo-beneficio, e reestruturação de processos. Atua no levantamento de requisitos de Hardware, diagnostico e soluções, bem como pesquisa e análise de equipamentos.</p>
+                        <a class="btn-znet" href="#carouselExampleControls"><strong>Saber mais</strong></a>
+                    </div>
+
+                    <div class="">
+                        <img src="banners/banner-equipe.png" alt="Minha foto", title="Meu nome" style="padding-left: 10px;padding-right:10px;border-radius: 20px;">
+                        <p style="text-align: center;padding-left: 20px;padding-top: 10px;filter: brightness(100%);text-align: center;color: white;text-shadow: black 0.1em 0.1em 0.5em;justify-content: center;">"A empresa <strong>ZNet S/A</strong> é uma nova empresa no ramo de serviços digitais e comércio eletrônico que
+                            está em franco processo de expansão e vem sendo administrada por um grande grupo que, recentemente,
+                            a tornou em uma organização de capital aberto. Ela traz como inovação a proposta de unir e oferecer, em
+                            um único sistema, a busca por ofertas de produtos..."
+                            </p>
+                            <a class="btn-znet" href="./znet.html"><strong>Saber mais</strong></a>
+                    </div>
+
+                    <div class="">
+                        <img src="banners/banner-projetos.png" alt="Minha foto", title="Meu nome" style="padding-left: 10px;padding-right:10px;border-radius: 20px;">
+                        <p style="text-align: center;padding-left: 20px;padding-top: 10px;">Executa tarefas de projetar soluções em hardware, integrando estruturas e componentes físicos dentro do projeto, verificando aspectos de viabilidade, custo-beneficio, e reestruturação de processos. Atua no levantamento de requisitos de Hardware, diagnostico e soluções, bem como pesquisa e análise de equipamentos.</p>
+                        <a class="btn-znet" href="#carouselExampleControls"><strong>Saber mais</strong></a>
+                    </div>
+                </div>
             </section>
+
+
             <section class="parallax-nossotime">
                 <h1 style="color: whitesmoke; text-shadow: white 2px 2px 15px;">Nosso Time</h1>
                 
@@ -336,8 +392,8 @@ footer { background-image: linear-gradient(to right bottom, #090909, #000000)}
                             <h3 style="color: lightgray; text-shadow: gray 4px 4px 15px;">Suwellen <strong>Veiga</strong></h3>
                         </div>
 					</div>
-				</div>
-            </section>
+                    </div>
+                </section>
             <section>
 				<div class="container">
 					<div class="row">
