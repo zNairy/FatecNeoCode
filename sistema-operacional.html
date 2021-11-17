@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Conectividade</title>
+        <title>Plataforma de Software</title>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -62,6 +62,17 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: white 0.1em 0.1em 0.5em;
+}
+
+.parallax-so {
+    background-image: url("banners/banner-sistema-operacional.jpg");
+    height: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
 }
 
 .parallax-conectividade {
@@ -196,9 +207,7 @@ footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
             <h1>Plataforma de <strong>Software</strong></h1>
             <div class="container">
                 <p class="descricao-inicio"><br>
-                Look at the stars Look how they shine for you And everything you do Yeah, they were all yellow I came along I wrote a song for you And all the things you do And it was called Yellow So, then I took my turn What a thing to've done And it was all yellow Your skin Oh yeah, your skin and bones Turn in to something beautiful
-Do you know You know I love you so You know I love you so I swam across I jumped across for you What a thing to do 'Cause you were all yellow I drew a line I drew a line for you
-What a thing to do And it was all yellow And your skin Oh yeah, your skin and bones Turn in to something beautiful Do you know For you, I'd bleed myse
+                    "Software é um conjunto de instruções que devem ser seguidas e executadas por um mecanismo, seja ele um computador ou um aparato eletromecânico. <br><br>É o termo genérico usado para descrever programas, apps, scripts, macros e instruções de código embarcado diretamente (firmware), de modo a ditar o que uma máquina deve fazer."
                 </p>
 
             </div>
@@ -207,7 +216,6 @@ What a thing to do And it was all yellow And your skin Oh yeah, your skin and bo
             Ícones feitos por "https://www.flaticon.com/br/autores/srip" from https://www.flaticon.com/br/ Flaticon www.flaticon.com
             -->
             <img class="icone-parallax" src="icons/icone-windows.png">
-        
         </section>
         <br><br>
 
@@ -215,15 +223,118 @@ What a thing to do And it was all yellow And your skin Oh yeah, your skin and bo
         <section id="introducao" class="c-post">
             <h1 style="color: #31343c;">Introdução</h1><br>
             <p class="post">
-                A <strong>NeoCode</strong> Soluções em Tecnologia em conjunto com o time da <strong>zNet</strong>
-                está desenvolvendo um projeto de integração e consultoria para realizar a implementação de tecnologias e plataformas
-                para seus processos internos e produção de software em geral.<br><br>
-                À seguir serão abordados tópicos especificando cada parte das respectivas implementações das plataformas de software e hardware, bem como equipamentos e esquemas que serão utilizados.
-                Todos esses tópicos estão de acordo com as necessidades especificadas pelo cliente, bem como suas prioridades e possíveis funcionalidades adicionais.
+                Nesta seção serão abordados os seguintes componentes de software:
+                <ul>
+                    <li><a href="#so" style="color:#303030">Base e Sistema Operacional</a></li>
+                    <li><a href="#requisitos" style="color:#303030">Requisitos para instalação</a></li>
+                    <li><a href="" style="color:#303030">Justificativa da escolha</a></li>
+                    <li><a href="#precos" style="color:#303030">Preços</a></li>
+                </ul>
                 </p>
-            <br><br>
 
+            <br><br>
+            
         </section>
+        
+        
+        <section class="parallax-so">
+            <h1>Sistema<strong> Operacional</strong></h1>
+            <br>
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/sistema-operacional.png">
+        </section>
+
+        <section id="so" class="c-post">
+            <p class="post">
+                <br>
+                O <a target="_blank" href="https://www.microsoft.com/pt-br/licensing/product-licensing/windows-server-2012-r2?activetab=windows-server-2012-r2-pivot%3aprimaryr2" style="color:#525252">Windows Server 2012 R2 Standard</a>
+                é a versão Standard é indicada para ambientes<br> não virtualizados ou com baixa densidade de VMs. <br><br>Aqui, valem as mesmas especificações da versão Datacenter – a diferença está no número de VMs. Com a Standard, são permitidos 2 VMs por licença.<br><br>
+                É interessante apontar, entretanto, que esse limite é relativo a licenciamento, e não a softwares. Para implementar mais de 2 VMs, será necessário adquirir licenças extras.<br><br>
+                <b>Esse sistema operacional será utilizado como principal, apenas nos servidores (será abordado posteriormente).</b>
+                
+            </p>
+        </section>
+
+        <section class="parallax-so">
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/ubuntu-server.png">
+        </section>
+
+        <section id="so" class="c-post">
+            <p class="post">
+                <br>
+                O <a target="_blank" href="https://ubuntu.com/download/server" style="color:#525252">Ubuntu Server 20.04 LTS</a>
+                O Ubuntu Server é um sistema operacional open source específico<br> para servidores que integra a gama de distribuições do Ubuntu<br> desenvolvida pela Canonical, como Ubuntu Desktop, Ubuntu Cloud e Ubuntu Core.<br><br>De acordo com pesquisa realizada pela W3Techs (ref. agosto de 2018),<br> 14,2% dos websites no mundo utilizam o Ubuntu.<br><br>
+
+A popularidade do Ubuntu Server em data centers tem explicação, a começar pela qualidade do sistema operacional em si.<br><br>
+                <b>Esse sistema operacional será virtualizado no <a target="_blank" href="https://www.microsoft.com/pt-br/licensing/product-licensing/windows-server-2012-r2?activetab=windows-server-2012-r2-pivot%3aprimaryr2" style="color:#525252">Windows Server 2012 R2 Standard</a>,
+                    para instalação do sistema da zNet.
+                </b>
+                
+            </p>
+        </section>
+
+        <section class="parallax-so">
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/windows-10-home.jpg">
+        </section>
+        
+        <section id="so" class="c-post">
+            <p class="post">
+                <br>
+                O <a target="_blank" href="https://support.microsoft.com/pt-br/windows/requisitos-do-sistema-do-windows-10-6d4e9a79-66bf-7950-467c-795cf0386715" style="color:#525252">Windows 10 Home</a>
+                muda o cenário da segurança, protegendo as identidades,<br> os dispositivos e as informações dos usuários com uma solução abrangente baseada<br> em inteligência que somente a Microsoft oferece.<br><br>
+                Recursos integrados de segurança, produtividade e gerenciamento<br> economizam tempo, dinheiro e reduzem os problemas.<br><br>
+
+                <b>Esse sistema operacional já vem integrado na compra dos Desktops ou Workstations (será abordado posteriormente)</b>
+                
+            </p>
+        </section>
+
+        <br><br>
+
+        <section id="requisitos", class="c-post">
+            <h2 style="color: #31343c;">Requisitos <strong>Necessários</strong></h2>
+            <p class="post">
+                Requisitos para instalação do:<br><br>
+                <h4>Windows Server 2012 Standard</h4>
+                <b>— Processador</b>: Mínimo de 1,4 GHz e 64 bits<br>
+                <b>— Memória RAM</b>: Mínimo de 512 MB<br>
+                <b>— Espaço em disco mínimo</b>: 32 GB<br>
+                <b>— Adaptador</b>: Gigabit (10/100/1000baseT) Ethernet<br>
+                <b>— Monitor</b>: Super VGA (1024 x 768) ou com resolução superior<br><br>
+
+                <h4>Windows 10 Home</h4>
+                <b>— Processador</b>: 1 gigahertz (GHz) ou um processador mais rápido, ou SoC<br>
+                <b>— Memória RAM</b>: 1 GB para 32 bits ou de 2 GB para 64 bits<br>
+                <b>— Espaço em disco mínimo</b>: 16 GB para SO de 32 bits ou 20 GB para SO de 64 bits<br>
+                <b>— Placa Gráfica</b>: DirectX 9 ou posterior com driver WDDM 1.0<br>
+                <b>— Vídeo</b>: 800 x 600<br><br>
+
+                <h4>Ubuntu Server 20.04 LTS</h4>
+                <b>— Processador</b>: 1 GHz CPU<br>
+                <b>— Memória RAM</b>: 512 MB RAM (Memória do sistema)<br>
+                <b>— Espaço em disco mínimo</b>: 2.5 GB<br>
+            </p>
+        </section>
+        
+        <section id="justificativa", class="c-post">
+            <br>
+            <h2 style="color: #31343c;"><strong>Justificativa</strong></h2>
+            <p class="post">
+
+            </p>
+        </section>
+
+        <section id="precos", class="c-post">
+            <h2 style="color: #31343c;">Preço <strong>Total</strong></h2>
+            <p class="post">
+                <ul>
+                    <li><b>Windows Server 2012 R2</b>: Na faixa de Valor: R$4780.</li>
+                    <li><b>Ubuntu Server 20.04 LTS</b>: Será virtualizado (Open Source)</li>
+                    <li><b>Windows 10 Home</b>: Incluído de Fábrica nas Workstations</li>
+                    <li><b>Total: R$4780</b>.</li>
+                </ul>
+            </p>
+        </section>
+
 
         <section>
             <p class="post">
