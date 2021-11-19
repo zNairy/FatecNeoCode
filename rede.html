@@ -76,7 +76,7 @@ h1 {
 }
 
 .parallax-conectividade {
-    background-image: url("banners/banner-hardware.jpg");
+    background-image: url("banners/banner-conectividade.jpg");
     height: 80%;
     background-position: center top;
     background-repeat: no-repeat;
@@ -193,8 +193,7 @@ footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
                     <ul>
                         <li><a class="menu-link" href="./index.html">home</a></li>
                         <li><a class="menu-link" href="#inicio">Início</a></li>
-                        <li><a class="menu-link" href="#introducao">Introdução</a></li>
-                        <li><a class="menu-link" href="./sistema-operacional.html">Voltar</a></li>
+                        <li><a class="menu-link" href="./hardware.html">Voltar</a></li>
                     </ul>
                 </nav>
             </div>
@@ -204,10 +203,11 @@ footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
 
         <!-- Inicio do site -->
         <section id="inicio" class="parallax-conectividade">
-            <h1>Plataforma de <strong>Hardware</strong></h1>
+            <h1>Plataforma de <strong>Hardware (Rede)</strong></h1>
             <div class="container">
                 <p class="descricao-inicio"><br>
-                    "É a parte física do computador, ou seja, peças e equipamentos que fazem o computador funcionar. <br>O termo também se refere ao conjunto de equipamentos acoplados em produtos que necessitam de gerenciamento computacional. <br>Um dos hardwares mais populares são os processadores."
+                    "Rede de computadores é uma malha que interliga milhares de sistemas computacionais para a transmissão de dados. Também conhecidos como nós, esses dispositivos interconectados enviam, recebem e trocam tráfego de dados, voz e vídeo, graças ao hardware e software que compõe o ambiente."
+                    <br><br>Fonte: <a href="https://www.controle.net/faq/rede-de-computadores" target="_blank">www.controle.net/faq/rede-de-computadores</a>
                 </p>
 
             </div>
@@ -220,14 +220,13 @@ footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
         </section>
         <br><br>
 
-
         <section id="introducao" class="c-post">
-            <h1 style="color: #31343c;">Introdução</h1><br>
+            <h1 style="color: #31343c;">Continuação</h1><br>
             <p class="post">
                 Nesta seção serão abordados os seguintes componentes de Hardware:
                 <ul>
-                    <li><a href="#servidor" style="color:#303030">Servidor</a></li>
-                    <li><a href="#workstations" style="color:#303030">Workstations</a></li>
+                    <li><a href="#rede" style="color:#303030">Rede</a></li>
+                    <li><a href="#redundanciaenergia" style="color:#303030">Redundância</a></li>
                 </ul>
                 </p>
 
@@ -235,121 +234,90 @@ footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
             
         </section>
 
-
-        <section id="servidor" class="parallax-so">
-            <h1><strong>Servidor</strong></h1>
-            <br>
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/servidor.png">
+        <section id="rede" class="parallax-so">
+            <h1><strong>Rede</strong></h1>
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/patch-painel.png">
         </section>
         <section class="c-post">
             <p class="post">
-                Servidor Torre PowerEdge T140 dados e máquina virtual.
-                
-                <br><h4><strong>Especificações</strong>:</h4>
-                <b>Processador</b>: Intel Xeon E-2236 3.4GHz, 8M cache, 6C/12T, turbo(80W).<br>
-                <b>Memória RAM</b>: 16GB 3200MT/s DDR4 ECC UDIMM BCC.<br>
-                <b>Memória de armazenamento</b>: HD 4TB SATA cabeado, 6Gbps, 7200RPM, 3.5 Polegadas.<br>
-                <b>Placa de rede</b>: Broadcom 5720 integrada, com duas portas Gigabit.<br>
-                <tt>Fonte: <a target="_blank" href="https://deals.dell.com" style="color: #414141;">https://deals.dell.com</a></tt>
+                Patch Painel de 24 portas
+                <br><h4><strong>Especificações</strong></h4>
+                <b>24 portas</b><br>
+                <b>Terminais de conexão em bronze fosforoso estanhado, padrão 110 IDC para</b><br>
+                <b>condutores de 22 a 26 AWG</b><br>
+                <b>Largura de 19” e altura de 44,45mm, que permite montagem em racks</b><br>
+                <b>compatível com plugs RJ45 e RJ11</b><br>
+
             </p>
         </section>
         <section class="parallax-so">
-            <br>
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/servidor.png">
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/load-balance.png">
         </section>
         <section class="c-post">
             <p class="post">
-                Servidor Torre PowerEdge T140 PfSense
-                <br><h4><strong>Especificações</strong>:</h4>
-                <b>Processador</b>: Intel Xeon E-2224 3.4GHz, 8M cache, 4C/4T, turbo(71W).<br>
-                <b>Memória RAM</b>: 8GB 3200MT/s DDR4 ECC UDIMM BCC.<br>
-                <b>Memória de armazenamento</b>: HD 1TB SATA cabeado, 6Gbps, 7200RPM, 3.5 Polegadas.<br>
-                <b>Placa de rede</b>: Broadcom 5720 integrada, com duas portas Gigabit.<br>
-                <tt>Fonte: <a target="_blank" href="https://deals.dell.com" style="color: #414141;">https://deals.dell.com</a></tt>
+                Load Balance TPLink gigabit
+                <br><h4><strong>Especificações</strong></h4>
+                <b>Interface</b>: 1 porta LAN Gigabit Fixa, 1 Porta WAN Gigabit Fixa e 3 Portas Gigabit<br>
+                <b>Alternáveis Lan/WAN.</b><br>
+                <b>Energia</b>: Fonte de alimentação Externa DC 9V/0.85<br>
+                <tt>Fonte: <a target="_blank" href="https://www.tp-link.com" style="color: #414141;">https://www.tp-link.com</a></tt>
             </p>
         </section>
         <section class="parallax-so">
-            <br>
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/rack-servidor.png">
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/switch-gerenciavel.png">
         </section>
         <section class="c-post">
             <p class="post">
-                Rack Servidor Organizador
-
-                <br><h4><strong>Especificações</strong>:</h4>
-                <b>Altura</b>: 116,6cm<br>
-                <b>Profundidade</b>: 60cm<br>
-                <b>Largura</b>: 60cm<br>
+                Switch Gerenciável Gigabit L2+ de 28 portas com 24 portas PoE+JetStream
+                <br><h4><strong>Especificações</strong></h4>
+                <b>Porta Full Gigabit</b>: 24x portas Gigabit PoE+<br>
+                <b>Gerenciamento Centralizado</b>: Acesso a nuvem e aplicativo Omada.<br>
+                <b>Roteamento Estático</b>: Ajuda a rotear o tráfego interno para uso mais eficiente.<br>
+                <tt>Fonte: <a target="_blank" href="https://www.tp-link.com" style="color: #414141;">https://www.tp-link.com</a></tt>
+            </p>
+        </section>
+        <section class="parallax-so">
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/roteador.png">
+        </section>
+        <section class="c-post">
+            <p class="post">
+                Roteador TP-Link Wireless Gigabit AC1350, Dual band.
+                <br><h4><strong>Especificações</strong></h4>
+                <b>Antenas</b>: 4 antenas externas e 1 interna.<br>
+                <b>Taxa de sinal</b>: 2.4GHz até 450 Mbps, 5GHz até 867Mbps.<br>
+                <b>Wireless</b>: ponte WDS, WMM, Programação e estatística WiFi e Modo AP.<br>
+                <b>Segurança</b>: Criptografia 64/128 bit WEP, WPA/WPA2,WPA-PSK/WPA2-PSK<br>
+                <b>Gerenciamento</b>: Controle de acesso, local e remoto.<br>
+                <b>DHCP</b>: Servidor, lista de clientes DHCP e reserva de endereço.<br>
+                <b>Energia</b>: Fonte de alimentação externa 12V/1a.<br>
                 <tt>Fonte: <a target="_blank" href="https://www.kabum.com.br/" style="color: #414141;">https://www.kabum.com.br/</a></tt>
             </p>
         </section>
 
 
+        <section id="redundanciaenergia" class="parallax-so">
+            <h1><strong>Redundância</strong></h1>
+            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/nobreak.png">
+        </section>
+        <section class="c-post">
+            <p class="post">
+                Nobreak TS Shara UPS Senno ST Rack 3KVA com 6 baterias internas.
+                <br><h4><strong>Especificações</strong>:</h4>
+                <b>Potencia</b>: 3200VA.<br>
+                <b>Entrada</b>: Bivolt automático 115V / 220V<br>
+                <b>Compartimento</b>: capaz de acomodar 4 baterias automotivas de 12V 45Ah<br>
+                <b>Estabilizador e filtro de linha integrados.</b><br>
+                <b>Conexões</b>: 6 tomadas de saída(Norma NBR 14163 – 10a)<br>
+                <b>Proteções</b>: Contra sobrecarga na saída com sinalização, contra subtenção AC,<br> contra sobre tenção AC, contra descarga total da bateria,<br> contra sobreaquecimento do inversor e transformador e proteção<br> contra curto-circuito nas tomadas de saída.<br>
 
-        <section id="workstations" class="parallax-so">
-            <h1><strong>Workstations</strong></h1>
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/workstation.png">
-        </section>
-        <section class="c-post">
-            <p class="post">
-                Dell Vostro Small Desktop
-                <br><h4><strong>Especificações</strong></h4>
-                <b>Processador</b>: Intel Core i5 10400, 2.9GHz até 4.3 GHz, cache de 12MB, hexa-core, 10° Geração.<br>
-                <b>Placa de vídeo</b>: Intel UHD Graphics<br>
-                <b>Memória RAM</b>: 8GB DDR4, 2666MHz, Expansível até 64 GB.<br>
-                <b>Armazenamento</b>: SSD de 256GB PCIe NVMe M.2<br>
-                <b>Sistema Operacional</b>: Windows 10 Home Single Language, 64 Bits em PT-BR<br>
-                <tt>Fonte: <a target="_blank" href="https://deals.dell.com" style="color: #414141;">https://deals.dell.com</a></tt>
-            </p>
-        </section>
-        <section class="parallax-so">
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/monitor.png">
-        </section>
-        <section class="c-post">
-            <p class="post">
-                Monitor: Dell P22199H 21.5”
-                <br><h4><strong>Especificações</strong></h4>
-                <b>Resolução</b>: 1920 x 1080 a 60Hz.<br>
-                <b>Conectores de Entrada</b>: HDMI, VGA, DisplayPort.<br>
-                <b>Relação de Aspecto</b>: 16:9.<br>
-                <b>Brilho</b>: 250cd/m2<br>
-                <b>Revestimento da tela</b>: Anti-ouscamento.<br>
-                <tt>Fonte: <a target="_blank" href="https://deals.dell.com" style="color: #414141;">https://deals.dell.com</a></tt>
-            </p>
-        </section>
-        <section class="parallax-so">
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/teclado.png">
-        </section>
-        <section class="c-post">
-            <p class="post">
-                Teclado e Mouse sem fio Dell Pro – KM5221W<br>
-                <tt>Fonte: <a target="_blank" href="https://deals.dell.com" style="color: #414141;">https://deals.dell.com</a></tt>
-            </p>
-        </section>
-        <section class="parallax-so">
-            <img style="display:block;margin-left: auto;margin-right: auto;" src="previews/impressora.png">
-        </section>
-        <section class="c-post">
-            <p class="post">
-                Impressora Multifuncional Brother Laser WiFi – DCP-L2540DW
-                <h4><strong>Especificações</strong></h4>
-                <b>Visor LCD</b>: 2 linha.<br>
-                <b>Voltagem</b>: 127V.<br>
-                <b>Tecnologia de impressão</b>: Laser.<br>
-                <b>Velocidade máxima</b>: Até 30 ppm.<br>
-                <b>Resolução máxima</b>: Até 2400x600 dpi.<br>
-                <b>Memória Padrão</b>: 32MB Duplex.<br>
                 <tt>Fonte: <a target="_blank" href="https://www.kabum.com.br/" style="color: #414141;">https://www.kabum.com.br/</a></tt>
             </p>
         </section>
-
-
-       
 
         <section>
             <p class="post">
-                <a class="btn-conteudo" href="./sistema-operacional.html"><strong> Conteúdo Anterior</strong></a>
-                <a class="btn-conteudo" href="./rede.html"><strong>Próximo Conteúdo</strong></a>
+                <a class="btn-conteudo" href="./hardware.html"><strong> Conteúdo Anterior</strong></a>
+                <a class="btn-conteudo" href="./justificativa-hardware.html"><strong>Próximo Conteúdo</strong></a>
             </p>
         </section>
         

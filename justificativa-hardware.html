@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Plataforma de Hardware</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style type="text/css">
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+        
+    font-size: 16px;
+    background-color: #E9F3FE;
+    overflow-x: hidden;
+}
+
+a  {color: #FFF; }
+
+img { max-width: 100%;}
+
+p {font-size: 1.2em; line-height: 1.4em; color: #141A28;}
+
+h1 { 
+    color:white;
+    text-shadow: 2px 2px 9px black;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.parallax-so {
+    background-image: url("banners/banner-hardware-2.jpg");
+    height: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.icone-parallax {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.descricao-inicio {
+    filter: brightness(100%);
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-shadow: white 0.1em 0.1em 0.5em;
+}
+
+.parallax-conectividade {
+    background-image: url("banners/banner-hardware.jpg");
+    height: 80%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 85px;
+    background-image: linear-gradient(to right bottom, #525252, #000000)
+}
+
+.branch, .branch img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.menu ul { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-link {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: #ff9c9c;
+    text-shadow: 1px 1px 15px #ff9c9c;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
+.menu .menu-link:hover {opacity: .50;}
+
+.li-ornament { margin: 10px 0; }
+
+.li-ornament::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: #7c7c7c;
+    border-radius: 5px;
+}
+.contact-link {color: #ffffff;}
+
+.map {
+    margin: 20px 0 40px 0;
+}
+
+.post {
+    text-align: center;    
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.c-post {
+    text-align: center;
+}
+
+.btn-znet {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: #505050;
+    text-shadow: 1px 1px 15px #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
+.btn-conteudo {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: #505050;
+    text-shadow: 1px 1px 15px #000000;
+    font-weight: bold;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
+footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
+
+.text-white { color: #E9F3FE; }
+
+.footer small { text-align: center; padding: 40px;  margin: 0 auto;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="./index.html" class="branch"><img src="logos/logo-com-frase.png" alt="Minha logo" title="NeoCode"></a>
+                <nav class="menu">
+                    <ul>
+                        <li><a class="menu-link" href="./index.html">home</a></li>
+                        <li><a class="menu-link" href="#inicio">Início</a></li>
+                        <li><a class="menu-link" href="./rede.html">Voltar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <!-- Inicio do site -->
+        <section id="inicio" class="parallax-conectividade">
+            <h1>Plataforma de <strong>Hardware (Justificativa)</strong></h1>
+            <div class="container">
+                <p class="descricao-inicio"><br>
+                    "É a parte física do computador, ou seja, peças e equipamentos que fazem o computador funcionar. <br>O termo também se refere ao conjunto de equipamentos acoplados em produtos que necessitam de gerenciamento computacional. <br>Um dos hardwares mais populares são os processadores."
+                </p>
+
+            </div>
+            <br><br>
+            <!--
+            Ícones feitos por "https://www.flaticon.com/br/autores/srip" from https://www.flaticon.com/br/ Flaticon www.flaticon.com
+            -->
+            <img class="icone-parallax" src="icons/icone-hardware.png">
+        
+        </section>
+        <br><br>
+
+        <section id="introducao" class="c-post">
+            <h1 style="color: #31343c;">Continuação</h1><br>
+            <p class="post">
+                Nesta seção serão abordados os seguintes componentes de Hardware:
+                <ul>
+                    <li><a href="#justificativa" style="color:#303030">Justificativa da Escolha</a></li>
+                    <li><a href="#precos" style="color:#303030">Preço Total</a></li>
+                </ul>
+                </p>
+
+            <br><br>
+            
+        </section>
+
+
+        <section id="justificativa", class="c-post">
+            <br>
+            <h2 style="color: #31343c;">Justificativa das <strong>Escolhas</strong></h2>
+            <p class="post">
+                <br><h5><strong>Servidor Dell T140 – servidor de dados e máquina virtual</strong>:</h5>
+                É indicado o servidor Dell T140 para servidor de dados e máquina virtual.<br>
+                Ele possui recursos suficientes para manter os dados da empresa seguros e íntegros e rodar<br>
+                uma máquina virtual com Linux para instalação dos softwares desenvolvidos pela empresa.<br>
+                Sua configuração é um processador Intel Xeon E-2236 Six Core e 12 threads, memória de 16GB<br>
+                DDR4 3200MT/s e 4 TB de HD SATA cabeado. Este servidor atende as necessidades de<br>
+                segurança, integridade e recursos que a ZNet precisa.<br><br>
+
+                <br><h5><strong>Servidor Dell T140 – Servidor Firewall PfSense</strong>:</h5>
+                É indicado outro servidor Dell T140 para executar a função de firewall, este servidor é<br>
+                praticamente idêntico ao servidor de dados, porém com recursos menores. Este servidor<br>
+                possui 8GB de RAM DDR4 3200MT/s um processador Intel Xeon E-2224 quad-core e 4 threads<br>
+                e um HD de 1TB. Escolhemos esse servidor, pois com ele podemos instar o PfSense e a partir<br>
+                dele conseguimos administrar o consumo de banda larga para os computadores da rede,<br>
+                monitorar os acessos dos funcionários, bloquear acessos estranhos entre outras funções que<br>
+                um servidor PfSense oferece a empresa.<br><br>
+
+                <br><h5><strong>Nobreak TS Shara UPS Senno</strong>:</h5>
+                Como a empresa ZNet é uma empresa do ramo de serviços digitais, ela não poderá correr o<br>
+                risco de ter seus serviços inativos caso aconteça de faltar energia no local onde a empresa será<br>
+                instalada.<br>
+                Tendo isso em vista, escolhemos um Nobreak de grande porte da TS Shara. Este Nobreak é um<br>
+                Nobreak Senoidal de 3200VA, ele entrega 2240 Watts, este modelo vem instalado nele 2<br>
+                baterias, porém ele tem espaço suficiente para acomodar 4 baterias veicular de 36 a 55 Ah,<br>
+                podendo oferecer até 30 horas de energia.<br><br>
+
+                <br><h5><strong>Dell Vostro Small Desktop</strong>:</h5>
+                Como workstation, é indicado o computador Dell Vostro.<br>
+                Este computador tem um processador Intel Core i5 de 10° geração hexa-core, 8GB DDR4 de<br>
+                memória e um armazenamento SSD NVMe de 256GB. É um computador com bom<br>
+                desempenho e recursos ideais para as atividades dos desenvolvedores da ZNet, seja<br>
+                desenvolvimento de sistemas, design ou marketing. Ele possui um SSD de 256 GB podendo ser<br>
+                pouco espaço para armazenamento das atividades dos colaboradores, porém tendo em vista o<br>
+                servidor de dados para armazenamento de arquivos dos colaboradores, este SSD é o suficiente<br>
+                para o uso. Caso não seja, o Dell Vostro tem espaço para a instalação de mais 2 HDs em seu interior.<br><br>
+
+                <br><h5><strong>Monitor Dell P2219H</strong>:</h5>
+                Em conjunto com o Dell Vostro, escolhemos o monitor Dell P2219h.<br>
+                Ele é um monitor LCD de 21.5” com resolução nativa de 1920 x 1080 a 60hz e o tipo de painel é<br>
+                o IPS e tela antiofuscante.<br>
+                Este monitor é um monitor ideal para trabalho, principalmente pelo painel ser IPS, com isso<br>
+                ele acaba tendo uma qualidade de imagens e cores bem melhor do que o painel TN e também<br>
+                independente do ângulo que a pessoa olhar para a tela ele não ofusca e nem muda de cor, ele<br>
+                possui uma frequência de trabalho de 60hz e um tempo de resposta de 8ms normal e 5ms rápido.<br><br>
+
+                <br><h5><strong>Teclado e mouse sem fio Dell Pro</strong>:</h5>
+                É um kit básico sem fio, porém suficientes para as atividades dos colaboradores de forma que<br>
+                atenda a necessidade e conforto deles.<br><br>
+                
+                <br><h5><strong>Rack servidor organizador</strong>:</h5>
+                Para equipamentos de rede e servidor é indicado uma rack de servidor de grande porte<br>
+                podendo comportar os 2 servidores e o Nobreak, e nas prateleiras superiores os equipamentos<br>
+                de rede e com espaço para instalação de patch painel<br><br>
+
+                <br><h5><strong>Patch Painel</strong>:</h5>
+                Para conexão de rede é indicado um patch painel de 24 portas compatível com plugs RJ45 e<br>
+                RJ11 ideal para interligar os equipamentos de rede com os demais do local.<br><br>
+
+                <br><h5><strong>Switch gerenciável</strong>:</h5>
+                É indicado um switch gerenciável de 28 portas com 24 portas PoE+JetStream, este switch é um<br>
+                switch Gigabit, ou seja, velocidade de banda ultrapassa os 100Mbps e possui roteamento<br>
+                estático que ajuda a rotear o tráfego interno da internet.<br><br>
+
+                <br><h5><strong>Load Balance</strong>:</h5>
+                Para garantia de funcionamento seguro mesmo com problemas de internet, indicamos um<br>
+                Load Balance TP-Link Gigabit. Esse equipamento é responsável por subir uma segunda internet<br>
+                caso a primeira possua problemas e quedas, ele é um equipamento Gigabit com 1 porta LAN<br>
+                Gigabit fixa 1 porta WAN Gigabit fixa e 3 portas Gigabit alternáveis LAN/WAN ideal para<br>
+                segurança de rede da ZNet.<br><br>
+
+            </p>
+        </section>
+
+        <section id="precos" class="c-post">
+            <br>
+            <h2 style="color: #31343c;">Preço por <strong>Equipamento</strong> e <strong>Total</strong></h2>
+            <p class="post">
+                <ul>
+                    <li><b>Servidor Dell T140 (servidor de dados e máquina virtual):</b> R$12.520,00</li>
+                    <li><b>Servidor Dell T140 (Servidor Firewall PfSense):</b> R$5.000,00</li>
+                    <li><b>Nobreak TS Shara UPS Senno:</b> R$3.699,90</li>
+                    <li><b>Dell Vostro Small Desktop:</b> R$4.200,00</li>
+                    <li><b>Monitor Dell P2219H:</b> R$1.000,00</li>
+                    <li><b>Teclado e mouse sem fio Dell Pro:</b> R$240,00</li>
+                    <li><b>Rack servidor organizador:</b> R$1.984,90</li>
+                    <li><b>Patch Painel:</b> R$375,44</li>
+                    <li><b>Switch gerenciável:</b> R$1.623,00</li>
+                    <li><b>Load Balance:</b> R$759,00</li>
+                    <li><b>Roteador TP-Link Wireless:</b> R$474,00</li>
+                    <li><b>Impressora multifuncional Brother: </b>R$2.128,80</li>
+                </ul>
+
+                <h2 style="color: #31343c;"><strong>Total</strong>: R$34.004,14</h2>
+                Valor para estimar*
+
+            </p>
+        </section>
+
+
+        <section>
+            <p class="post">
+                <a class="btn-conteudo" href="./rede.html"><strong> Conteúdo Anterior</strong></a>
+                <a class="btn-conteudo" href="./conclusao.html"><strong>Próximo Conteúdo</strong></a>
+            </p>
+        </section>
+        
+
+        <footer>
+           <div class="container text-white footer">
+               <small>NeoCode Inc | Todos os direitos reservados - 2021</small>
+           </div>
+        </footer>
+    </body>
+</html>
