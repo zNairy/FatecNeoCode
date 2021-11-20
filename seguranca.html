@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Segurança</title>
+        <title>Redundância de T.I</title>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -20,10 +20,21 @@
     text-decoration: none;
 }
 
+.post {
+    text-align: center;    
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
 html, body {
     width: 100%;
     height: 100%;
     scroll-behavior: smooth;
+}
+
+.c-post {
+    text-align: center;
 }
 
 body {
@@ -154,9 +165,9 @@ footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
             <h1>Segurança</h1>
             <div class="container">
                 <p class="descricao-inicio"><br>
-                Look at the stars Look how they shine for you And everything you do Yeah, they were all yellow I came along I wrote a song for you And all the things you do And it was called Yellow So, then I took my turn What a thing to've done And it was all yellow Your skin Oh yeah, your skin and bones Turn in to something beautiful
-Do you know You know I love you so You know I love you so I swam across I jumped across for you What a thing to do 'Cause you were all yellow I drew a line I drew a line for you
-What a thing to do And it was all yellow And your skin Oh yeah, your skin and bones Turn in to something beautiful Do you know For you, I'd bleed myse
+                    O termo redundância indica a duplicação de componentes críticos, aumentando a segurança, tendo em vista a disponibilidade de dados e confiabilidade.
+                    <br><br>
+                    Nesse sentido, alguns componentes ou funções críticas são duplicadas ou são otimizadas de forma a serem adotadas medidas como: cópias de segurança ou uso de hardwares e softwares de alto desempenho de forma a garantir a integridade do sistema ou inibir qualquer tipo de falha.
                 </p>
             </div>
             <br><br>
@@ -165,10 +176,111 @@ What a thing to do And it was all yellow And your skin Oh yeah, your skin and bo
         </section>
         
         <!-- Abordando os tópicos-->
-        <section>
-            
-        </section>
+        
+        <section class="c-post">
+            <br><br>
+            <h2>Redundância de <strong>T.I</strong></h2>
 
+            <p class="post">
+O termo redundância indica a duplicação de componentes críticos, aumentando a segurança, tendo em vista a disponibilidade de dados e confiabilidade.<br>
+
+
+
+Nesse sentido, alguns componentes ou funções críticas são duplicadas ou são otimizadas de forma a serem adotadas medidas como: cópias de segurança ou uso de hardwares e softwares de alto desempenho de forma a garantir a integridade do sistema ou inibir qualquer tipo de falha.<br>
+
+
+
+Em alguns casos onde a segurança é um ponto de muita vulnerabilidade ou sensibilidade, podendo ser o alvo de interrupção de infraestrutura ou operações, é necessário adotar configurações específicas de Redundãncia Modular Tripla.<br>
+
+
+
+Em Arquitetura de sistemas, considera-se primeiramente o hardware como discos rígidos, mas as rotinas de backup, restore de dados são medidas de redundância que devem implementadas dentro de uma empresa.<br>
+
+
+
+<h2>O Tipos</h2>
+
+
+Data Centers, definem niveis de redundância como N, N + 1, 2N e 2N+1.<br>
+
+
+
+Nivel N = Quantidade mínima para uma operação segura. Descreve unidades de resfriamento ou UFPS por exemplo, <br>e outras possíveis falhas ou manutenção de equipamentos.<br>
+N + 1 = Permite ter mais segurança contra falhas ou interrupções.<br><br> Normalmente esses padrões requerem uma unidade extra para cada 4 necessárias, ou seja, se 12 unidades de resfriamento forem a dicionadas, <br>uma instalação N + 1 terá 3 outras unidades
+2N = Todos os componentes para uma operação ideal são duplicados. <br>Caso uma infraestrutura primária fique fora de operação, um sistema 2N poderá assumir. Portanto, a redundância 2N<br> oferece um serviço ininterrupto mesmo em situações de falha significativa.<br>
+2N + 1 = A forma mais alta e completa de redundância de um data center. É um sistema que fornece backup<br> completo e mantém um componente adicional para atender às falhas e demandas de manutenção.<br>
+
+
+<br>
+<h2>Como implementar a redundância</h2> 
+
+
+
+O Uptime Institute estabeleceu 4 níveis de tolerância a falhas chamado Tier, sendo o 1 o mais baixo nivel e o 4 o mais alto.<br>
+
+
+
+Essas configurações estabelecem um design e melhores praticas para construção de um data center, <br>estabelecendo critérios como: distribuição elétrica completa de múltiplos caminhos, geração de energia e sistemas UPS.<br>
+
+
+
+Alguns equipamentos devem ser pensados para atender ao requisito de segurança e aumentar a segurança e <br>confiabilidade tendo a necessidade de suplementar ou projetar réplicas com as mesmas configurações originais como:<br><br>
+
+
+
+<b>* Servidor - </b>custo alto uma vez que exige espaço físico para acomoda-lo devidamente com capacidade de <br>resfriamento, manutenção etc; exige domínio redundante, frontend e servidores de validação para <br>balencear carga como servidor DNS secundário ou Windows AD.<br>
+<b>* Semi-Hot spares</b> para promover fácil recuperação de backup par a reiniciar processamento.<br>
+
+
+<br>
+<h2>Rede</h2>
+
+
+
+* Internet<br>
+* Backups<br>
+* Unidades de disco<br>
+* Suprimentos de energia<br>
+
+
+<br>
+<h2>UFPS</h2>
+
+
+
+* Circuitos Elétricos<br>
+* Energia Elétrica<br>
+* Sistemas de Telecom<br>
+
+
+<br>
+<h2>Configurações sem redundância:</h2>
+* Portas de rede, cabeamento e portas de patch panel<br>
+* Sistemas de telefonia<br>
+* Switches, roteadores e firewalls<br>
+
+
+<br>
+<h2>Quais os benefícios da redundância em infraestruturas de TI?</h2>
+
+
+
+Alta Disponibilidade e Tolerância a Falhas são termos usados para transmitir a importância do tempo total<br> de um aplicativo ou programa em execução ou em atividade.<br>
+
+
+
+Disponibilidade garante desempenho e capacidade de suporte a todas as solicitações do usuário, <br>ou seja, é mais produtividade e eficiência. É a oportunidade de blindar as vulnerabilidades e evitar que falhas resultem <br>em prejuízo e perdas financeiras e o consequente comprometimento da confiabilidade da empresa.<br>
+
+
+
+As empresas estão sujeitas também a desastres físicos como enchentes, ventanias etc., Fenômenos que<br> podem trazer danos irreversíveis a dados armazenados. <br><br>Por isso manter backups fora do ambienteempresarial é importante. Ataques cibernéticos e falhas na <br>gestão da segurança de dados podem resultar em perda de dados ou roubo de informações sensíveis.<br>
+
+
+
+Escolher o nível mais indicado de redundância depende de todos os fatores a serem analisados como <br>exigência de disponibilidade de equipamentos e padrões de atividade, sendo portanto uma escolha variável<br> pois nem todo departamento exige esse tipo de recomendação.<br>
+
+            </p>
+        </section>
 
 
         <footer>
