@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Indicação de Funcionários</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style type="text/css">
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+        
+    font-size: 16px;
+    background-color: #E9F3FE;
+    overflow-x: hidden;
+}
+
+a  {color: #FFF; }
+
+img { max-width: 100%;}
+
+p {font-size: 1.2em; line-height: 1.4em; color: #141A28;}
+
+h1 { 
+    color:white;
+    text-shadow: 2px 2px 9px black;
+    text-transform: uppercase; 
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.parallax-so {
+    background-image: url("banners/banner-hardware-2.jpg");
+    height: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.icone-parallax {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.descricao-inicio {
+    filter: brightness(100%);
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-shadow: white 0.1em 0.1em 0.5em;
+}
+
+.parallax-conectividade {
+    background-image: url("banners/banner-treinamento.jpg");
+    height: 80%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.parallax-indicacao {
+    background-image: url("banners/banner-indicacao.jpg");
+    height: 60%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.parallax-indicacao2 {
+    background-image: url("banners/banner-indicacao-azul.jpg");
+    height: 40%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 85px;
+    background-image: linear-gradient(to right bottom, #525252, #000000)
+}
+
+.branch, .branch img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.menu ul { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-link {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: #ff9c9c;
+    text-shadow: 1px 1px 15px #ff9c9c;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
+.menu .menu-link:hover {opacity: .50;}
+
+.li-ornament { margin: 10px 0; }
+
+.li-ornament::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 12px;
+    margin-right: 10px;
+    background-color: #7c7c7c;
+    border-radius: 5px;
+}
+.contact-link {color: #ffffff;}
+
+.map {
+    margin: 20px 0 40px 0;
+}
+
+.post {
+    text-align: center;    
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.c-post {
+    text-align: center;
+}
+
+.btn-znet {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    color: #505050;
+    text-shadow: 1px 1px 15px #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
+.btn-conteudo {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: #505050;
+    text-shadow: 1px 1px 15px #000000;
+    font-weight: bold;
+    letter-spacing: .15em;
+    transition: all .3s ease-in-out;
+}
+
+footer { background-image: linear-gradient(to right bottom, #414141, #000000)}
+
+.text-white { color: #E9F3FE; }
+
+.footer small { text-align: center; padding: 40px;  margin: 0 auto;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="./index.html" class="branch"><img src="logos/logo-com-frase.png" alt="Minha logo" title="NeoCode"></a>
+                <nav class="menu">
+                    <ul>
+                        <li><a class="menu-link" href="./index.html">home</a></li>
+                        <li><a class="menu-link" href="#inicio">Início</a></li>
+                        <li><a class="menu-link" href="#introducao">Introdução</a></li>
+                        <li><a class="menu-link" href="./indicacao-funcionarios.html">Voltar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <!-- Inicio do site -->
+        <section id="inicio" class="parallax-conectividade">
+            <h1><strong>Treinamento</strong></h1>
+            <div class="container">
+                <p class="descricao-inicio"><br>
+                </p>
+
+            </div>
+            <br><br>
+            <!--
+            Ícones feitos por "https://www.flaticon.com/br/autores/srip" from https://www.flaticon.com/br/ Flaticon www.flaticon.com
+            -->
+            <img class="icone-parallax" src="icons/funcionarios.png">
+        
+        </section>
+        <br><br>
+
+
+        <section id="introducao" class="c-post">
+
+            <p class="post">
+                Nesta seção serão abordados as seguintes tópicos:
+                <ul>
+                    <li><a href="#ferramentas" style="color:#303030">Ferramentas</a></li>
+                    <li><a href="#gestao-ti" style="color:#303030">Gestão da TI</a></li>
+                    <li><a href="#monitoramento" style="color:#303030">Monitoramento</a></li>
+                </ul>
+            </p>
+            <br><br>
+            <h1 style="color: #31343c;">Introdução</h1><br>
+            A Znet conecta vendedores ou prestadores de serviço com seus respectivos consumidores. Ou seja, é uma empresa de marketplace de produtos e serviços.<br>
+<br>A neoCode reuniu uma série de recomendações para gestão de uma plataforma de venda <br>de produtos e serviços para tirar o melhor proveitodesse tipo de ecommerce.<br><br>
+
+
+
+Primeiramente: Uma plataforma dessa natureza deve contar com assessoria jurídica e apresentar um benchmark de mercado.<br>
+O investimento em marketing é necessário para prospectar clientes e atrair um tráfego de compradores para que se convertam<br>
+ em vendas. Nesse sentido, a terceirização dos serviços de uma agência de marketing ou a contratação de profissionais freelance<br>
+  são formas de agregar valor e reduzir custos. Bem como análise de retorno estratégico dos canais de divulgação.<br><br>
+
+
+
+Como se trata de uma empresa nova no mercado que possui uma certa estrutura organizacional, a adequação quanto a contratação de<br>
+ novos funcionários conforme a necessidade da empresa, se dá pelo volume de vendas que exigem um numero maior de pessoas na operação.<br>
+  A plataforma deve oferecer serviços e produtos com vantagens competitivas como curadoria de transações e avaliação de desempenho<br>
+   e pós venda para o cliente ou usuário da plataforma.<br><br>
+
+
+        </section>
+    
+
+
+        <section id="ferramentas" class="parallax-indicacao">
+            <h1><strong>Ferramentas</strong></h1>
+            <br>
+            <!--
+                Ícones feitos por https://www.freepik.com Freepik from https://www.flaticon.com/br/ Flaticon
+            -->
+            <img class="icone-parallax" src="icons/funcionarios.png">
+        </section>
+        <br><br>
+
+        <section class="c-post">
+            As Plataformas de intermediação ou gateway de pagamentos devem operar de acordo com procedimentos como: mensalidade ou cobrança por <br>
+            taxa sobre cada transação conforme meio de pagamento escolhido. E a medida que o crescimento da empresa avance, a contratação de hospedagem<br>
+             em nuvem em um modelo hibrido - como a Aws, Amazon WS com custo mensal pode ser uma boa forma de adequar grandes volumes de operação<br>
+              com custos reduzidos. Ferramentas de chatbox ou automação de marketing podem ser consideradas.<br><br>
+
+            A menos que se opte pelo desenvolvimento e manutenção da plataforma pelos próprias profissionais alocados na empresa, a contratação <br>
+            de uma plataforma pronta ou a terceirização de uma empresa que ofereça serviços de outsourcing para Desenvolvimento de sistemas e <br>
+            manutenção, seja uma forma recomendada de redução de custo se comparado ao investimento na contratação de desenvolvedores e designers,<br>
+             somado ao tempo de implantação.<br><br>
+            
+            Qualquer empresa que opte por desenvolver um marketplace deve prioritariamente se preocupar em atender a satisfação do cliente no<br>
+             quesito: tempo de entrega, prazos. E por isso, investir em recursos logísticos é extremamente necessário. Uma das estratégias utilizadas<br>
+              atualmente pelas grandes plataformas de marketplace, consiste em adotar a terceirização de pontos de coleta, oferecendo pagamentos<br>
+               por pacotes para lojistas que optarem por disponibilizarem espaço em seus comércios para armazenamento de produtos.<br><br>
+            
+            Um ponto a ser estudado com cuidado: O investimento em treinamento e na seleção dos melhores vendedores e mais engajados para prospecção<br>
+             de parceiros e clientes. E a curadoria em definir os produtos que serão vendidos na plataforma. Pois apesar da plataforma vender, <br>
+             intermediar e se responsabilizar pelo produto, inconsistências durante validação de transações, seja por ausência de produto no <br>
+             estoque ou recusas no pagamento, podem trazer uma série de problemas para clientes que detém do seu capital imobilizado em <br>
+             mercadorias que dependem do recebimento para pagamento de fornecedor . Esse tipo de ocorrência, muitas vezes compromete diretamente<br>
+              a credibilidade do site, quando este não se compromete a sanar o problema ou não possui um resguardo ou politica bem definida <br>
+              para o cliente que pode se sentir lesado, trazendo o consequente desligamento do lojista da plataforma.<br><br>
+            
+            O planejamento, relatórios de desempenho com a mensuração de resultados, tanto de infraestrutura de TI, quanto das vendas e desempenho<br>
+             de fluxo de caixa, podem acarretar prejuízos quando não inseridos na rotina da empresa. Por isso é importante que as etapas de um <br>
+             processo de suporte de TI sejam atendidas em que as métricas são definidas em:<br><br>
+            
+            <b>1) DIAGNÓSTICO</b>: Analise da situação para proposição de um plano de ação com soluções e idéias que<br> atendam as expectativas e resolva o problema dos usuários.<br><br>
+            <b>2) AUDITORIA E DOCUMENTAÇÃO</b>: Documentação do estado atual da infraestrutura de TI da companhia, a <br>fim de garantir o início dos trabalhos com conhecimento total do cenário e desafios pela frente.<br><br>
+            <b>3) PLANO DE INVESTIMENTOS</b>: Definir alternativas de investimentos e opções de acordo com a realidade <br>econômica da empresa, priorizando a segurança de dados e disponibilidade dos serviços.<br><br>
+            <b>4) ATENDIMENTO</b>: Equipe de profissionais responsável pelo funcionamento da TI à disposição da empresa e <br>monitorando constantemente o ambiente.<br><br>
+        
+            <br>
+            Outros aspectos a serem considerados para que o ambiente de TI seja eficiente e atenda as demandas do fluxo de trabalho e podem gerar<br>
+             impactos positivos e negativos em todos níveis da empresa são:<br><br>
+        </section>
+
+        <section id="gestao-ti" class="parallax-indicacao">
+            <h1>A Gestão da <strong>TI</strong></h1>
+            <br>
+            <!--
+                Ícones feitos por https://www.freepik.com Freepik from https://www.flaticon.com/br/ Flaticon
+            -->
+            <img class="icone-parallax" src="icons/funcionarios.png">
+        </section>
+        <br><br>
+
+        <section class="c-post">
+            Outros aspectos a serem considerados para que o ambiente de TI seja eficiente e atenda as demandas do fluxo de trabalho e podem gerar<br>
+             impactos positivos e negativos em todos níveis da empresa serão descritos nos próximos tópicos à seguir...<br><br>
+            
+
+             A gestão da tecnologia de informação permite administrar recursos tecnológicos utilizados no processo de tratamento da informação<br>
+             da empresa ou instituição. A coleta, armazenamento, processamento, seleção e comparação, distribuição e avaliação dos dados convertidos<br>
+              em informações para tomada de decisão são processos envolvidos na gestão da TI de uma empresa.<br><br>
+
+
+
+            A partir dessa necessidade, com o crescimento das empresas e evolução de recursos tecnológicos, as ferramentas<br>
+             foram aprimoradas de forma a atender a demanda por melhor entendimento do negócio para desenvolvimento<br>
+              de produtos e serviços que visem as necessidades dos clientes. Logo, ter uma boa gestão de TI na empresa se tornou uma<br>
+               vantagem competitiva, que leva a:<br><br>
+            <b>*</b> Promover transformação digital na empresa.<br>
+            <b>*</b> Manter ou melhorar a performance de serviços.<br>
+            <b>*</b> Atender a demanda por satisfação de usuários e clientes dos serviços de uma empresa ou organização.<br>
+            <b>*</b> Gerenciamento de riscos que a tecnologia da informação pode gerar ao negócio.<br>
+            <b>*</b> Gestão da equipe de TI.<br>
+            <b>*</b> Suporte aos processos organizacionais, bem como alinhar a TI aos objetivos e metas estratégicas da empresa.<br><br>
+
+            <b>Metodologias de Governança utilizadas: Cobit (Framework da Isaca) e ITIL.</b><br><br>
+
+        </section>
+    
+        <section id="monitoramento" class="parallax-indicacao">
+            <h1>O <strong>Monitoramento</strong></h1>
+            <br>
+            <!--
+                Ícones feitos por https://www.freepik.com Freepik from https://www.flaticon.com/br/ Flaticon
+            -->
+            <img class="icone-parallax" src="icons/funcionarios.png">
+        </section>
+        <br><br>
+
+        <section class="c-post">
+            Facilita tomada de decisão: Identificar pontos críticos para que a equipe realize os ajustes com maior rapidez e <br>
+            garanta maiores índices de disponibilidade de serviços.<br><br>
+
+            Aumento de Produtividade: Através de estatísticas de monitoramento é possível aumentar o desempenho de serviços, <br>
+            automatizando processos e eliminando tarefas que não contribuem a fim de direcionar esforços aos tópicos de maior interesse para a empresa.<br><br>
+
+            Informações Qualificadas: Captar dados precisos e relevantes contribuem para melhores tomadas de decisões e favorece a <br>
+            solução de falhas, bem como define melhor o redirecionamento de investimentos.<br><br>
+
+            Economia: A produtividade tende a melhorar a rentabilidade do negócio. Monitorar serviços críticos e os de TI <br>
+            também propiciam impacto direto nos custos operacionais, pois a análise dos dados captados <br>
+            permitem reavaliar despesas desnecessárias.<br><br>
+
+            Histórico: Com as ferramentas utilizadas pela NeoCode, a verificação em tempo real se torna possível, bem como<br>
+            a verificação de falhas ocorridas ou se o hardware atual tem suporte de carga de trabalho aplicado sobre sua estrutura.<br><br>
+
+            Notificações: As notificações são personalizáveis, isto é, conforme a natureza, porte e necessidade da empresa, <br>
+            é possível o envio de notificações via email, aplicativo, sms, ligação de voz de acordo com as solicitações do cliente.<br><br>
+
+            Os serviços disponibilizados pela neoCode vão desde a consultoria e implementação, instalação e orientações de contratações <br>
+            de profissionais especializados, até mesmo à oferta de serviço de suporte HelpDesk em parceria com<br>
+            os colaboradores da empresa, utilizando ferramentas de intermediação de chamados para que os nossos analistas possam<br>
+            orienta-los quanto à:<br><br>
+
+            <b>*</b> Verificação de rotina de backup<br>
+            <b>*</b> Controle de chamados<br>
+            <b>*</b> Configuração de ferramentas como Basecamp (controle de chamados com exibição de notificação ao cliente)<br>
+            <b>*</b> Configuração de impressoras<br>
+            <b>*</b> Formatação<br><br>
+
+            Dependendo da demanda, dispomos de planos mensais de suporte para a empresa com modelos de contratos<br>
+             de atendimento de ocorrências de 2 a 7 vezes por semana ou de modo remoto.<br><br>
+
+            Para isso contamos o apoio de profissionais com as certificações de:<br><br>
+            <b>*</b> Analista de suporte help desk nivel 1 ao mais avançado;<br>
+            <b>*</b> Analista de Redes certificados pela Cisco;<br>
+            <b>*</b> Analista de Infraestrutura que entende de configurações de software, programação e DBA com um custo de poucas horas ao mês.<br><br>
+
+            Também podemos oferecer, caso opte pelo treinamento pessoal ao invés do plano mensal de suporte, para o Administrador<br>
+             ou gerenciador que cuida do Servidor de dados da empresa, ou o responsável pelo ambiente SQL Server que atua como<br>
+              desenvolvedor, Analista de infraestrutura, para o DBA iniciante ou com pouca experiência, indicamos módulos de<br>
+              treinamento para as rotinas do dia a dia com os seguintes tópicos:<br><br>
+
+            <b>*</b> Instalação e configuração do SQL Server<br>
+            <b>*</b> Gerenciamento de Acessos no SQL Server<br>
+            <b>*</b> Diversas Tarefas do dia a dia<br>
+            <b>*</b> Backup e Restore<br>
+            <b>*</b> SQL Agente<br>
+            <b>*</b> Tuning<br>
+            <b>*</b> Criação de Alertas<br><br>
+
+            <b>Já para as tarefas de menor complexidade, temos vários planos de oficinas e workshops para uso de sistemas Office, configurações de email, sistemas ERP e muito mais.</b><br><br>
+
+
+            Referências e Fontes: <br><tt><a href="https://www.vnek.com.br" target="_blank" style="color: #141A28;"> www.vnek.com.br </a></tt>  |  <tt><a href="https://www.youtube.com/watch?v=SbQRV5xvx4k" target="_blank" style="color:#141A28"> www.youtube.com/watch?v=SbQRV5xvx4k </a></tt>  |  <tt><a style="color: #141A28" href="https://www.youtube.com/watch?v=SwrGg3EFsyA" target="_blank"> www.youtube.com/watch?v=SwrGg3EFsyA </a></tt> <br><br>
+            <br>
+            Tarefas do Dia a Dia de um DBA – Ao Vivo ou na Udemy – Fabricio Lima | Consultoria e Treinamento SQL Server<br>
+<a style="color: #141A28;" target="_blank" href="https://www.fabriciolima.net/cursos-online/treinamento-tarefas-do-dia-a-dia-de-um-dba-online/">www.fabriciolima.net/cursos-online/treinamento-tarefas-do-dia-a-dia-de-um-dba-online/</a>
+        </section>
+
+        <section>
+            <p class="post">
+                <a class="btn-conteudo" href="./indicacao-funcionarios.html"><strong> Conteúdo Anterior</strong></a>
+                <a class="btn-conteudo" href="./conclusao.html"><strong>Próximo Conteúdo</strong></a>
+            </p>
+        </section>
+        
+
+        <footer>
+           <div class="container text-white footer">
+               <small>NeoCode Inc | Todos os direitos reservados - 2021</small>
+           </div>
+        </footer>
+    </body>
+</html>
